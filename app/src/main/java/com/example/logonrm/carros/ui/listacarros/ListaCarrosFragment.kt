@@ -35,7 +35,7 @@ class ListaCarrosFragment : Fragment() {
                                     response: Response<List<Carro>>?) {
 
                 if(response?.isSuccessful == true) {
-
+                    setupLista(response?.body())
                 }
             }
 
